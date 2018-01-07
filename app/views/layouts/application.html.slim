@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Blog
+    = csrf_meta_tags
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    .container
+      .jumbotron
+        h1.display-4 Andrey's Blog
+        p.lead This is a blog about things I think about.
+      
+      = yield
